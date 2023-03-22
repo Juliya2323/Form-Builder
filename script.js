@@ -94,7 +94,7 @@ function createInput() {
 
   function createSubInput(parentId) {
     let parent = document.getElementById(parentId);
-    let subInputCondition = prompt("Enter condition");
+    let subInputCondition = prompt("Enter condition (for checkbox choose on/off)");
     let subInputType = prompt("Enter 1-string, 2-number, 3-yes/no");
 
     if (subInputType == 1) {
