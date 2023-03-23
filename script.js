@@ -25,7 +25,7 @@ function createInput() {
       showSubInput(childId, parentId);
     });
     let subInputButton = document.createElement("button");
-    subInputButton.textContent = "Add a sub-input";
+    subInputButton.textContent = "+ sub-input";
     subInputButton.addEventListener("click", () => {
       createSubInput(parentId);
     });
@@ -54,7 +54,7 @@ function createInput() {
       showSubInput(childId, parentId);
     });
     let subInputButton = document.createElement("button");
-    subInputButton.textContent = "Add a sub-input";
+    subInputButton.textContent = "+ sub-input";
     subInputButton.addEventListener("click", () => {
       createSubInput(parentId);
     });
@@ -83,7 +83,7 @@ function createInput() {
       showSubInput(childId, parentId);
     });
     let subInputButton = document.createElement("button");
-    subInputButton.textContent = "Add a sub-input";
+    subInputButton.textContent = "+ sub-input";
     subInputButton.addEventListener("click", () => {
       createSubInput(parentId);
     });
@@ -94,7 +94,7 @@ function createInput() {
 
   function createSubInput(parentId) {
     let parent = document.getElementById(parentId);
-    let subInputCondition = prompt("Enter condition (for checkbox choose on/off, for a number enter a number it should be equal to =)");
+    let subInputCondition = prompt("Enter condition (1.for string type the word 2. for a number enter a number it should be equal to 3. for checkbox choose on/off)");
     let subInputType = prompt("Enter 1-string, 2-number, 3-yes/no");
 
     if (subInputType == 1) {
@@ -114,7 +114,7 @@ function createInput() {
       subInputContainer.appendChild(subInputField);
 
       let subInputButton = document.createElement("button");
-      subInputButton.textContent = "Add a sub-input";
+      subInputButton.textContent = "+ sub-input";
       subInputButton.addEventListener("click", () => {
         createSubInput(subParentId);
       });
@@ -152,7 +152,7 @@ function createInput() {
       subInputContainer.appendChild(subInputField);
 
       let subInputButton = document.createElement("button");
-      subInputButton.textContent = "Add a sub-input";
+      subInputButton.textContent = "+ sub-input";
       subInputButton.addEventListener("click", () => {
         createSubInput(subParentId);
       });
@@ -190,7 +190,7 @@ function createInput() {
       subInputContainer.appendChild(subInputField);
 
       let subInputButton = document.createElement("button");
-      subInputButton.textContent = "Add a sub-input";
+      subInputButton.textContent = "+ sub-input";
       subInputButton.addEventListener("click", () => {
         createSubInput(subParentId);
       });

@@ -1,17 +1,16 @@
 body {
-  background-color: #FFB443;
+  background-color: #ffb443;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 25px;
   padding-top: 30px;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
 }
 
 div {
-  padding: 20px;
-  background-color: #fff;
+  padding: 20px 0;
   border-radius: 20px;
 }
 
@@ -20,17 +19,17 @@ input {
   border: 3px solid black;
   border-radius: 7px;
   padding: 8px;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-size: 18px;
 }
 
 input:focus {
-  
+  border: 3px solid rgb(237, 213, 171);
 }
 
 button {
   padding: 10px 25px;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-size: 18px;
   background-color: #131313;
   color: white;
@@ -51,4 +50,43 @@ button:active {
 label {
   font-size: 24px;
   padding-right: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  label {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  input {
+    width: 200px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  label {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  input {
+    width: 160px;
+    margin-top: 20px;
+  }
+
+  div {
+    padding: 40px 15px;
+    border-radius: 20px;
+    align-self: center;
+    background-color: #fff;
+    border-radius: 15px;
+  }
 }
